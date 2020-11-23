@@ -1,0 +1,12 @@
+Finalidade: 
+- Validar o redirecionamento para a página de download do aplicativo SMARTMEI a partir da página inicial
+
+Pré-requisitos:
+- Acessar a página do smartmei (https://www.smartmei.com.br/)
+
+Passos para reprodução: 
+Verificar a existência do botão "BAIXAR APP" na página inicial
+- O botão deve estar exibido na tela
+
+Clicar no botão "BAIXAR APP"
+- A página de download do aplicativo deve ser carregada (Google Play)

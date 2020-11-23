@@ -1,0 +1,17 @@
+Finalidade: 
+- Validar a página de Ajuda do Smartmei
+
+Pré-requisitos:
+- Acessar a página do smartmei (https://www.smartmei.com.br/)
+
+Passos para reprodução: 
+Clicar na opção "Central de Ajuda"
+- O usuário deve ser redirecionado para a página de Ajuda
+- A página deve habilitar as opções "Aprender", no item "Artigos"
+- A página deve habilitar as opções "Ver mais", no item "Perguntas?"
+
+Clicar na opção "Ver mais"
+- O usuário deve ser redirecionado para a página de Perguntas Frequentes ("./perguntas-frequentes/")
+
+Validar as opções da página
+- A página deve exibir as opções: "Sobre o MEI", "Como manter sua MEI em dia?", "Desenquadramento" e "Fechamento de MEI"
