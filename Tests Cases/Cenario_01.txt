@@ -1,0 +1,13 @@
+Finalidade: 
+- Validar a navegação no carrossel da sessão "Como Funciona"
+
+Pré-requisitos:
+- Acessar a página do smartmei (https://www.smartmei.com.br/)
+
+Passos para reprodução: 
+Clicar na opção "Como Funciona"
+- A página deve exibir as informações da sessão “Fique livre da burocracia”
+
+Clicar nas setas dos carrosséis 
+- A página deve rolar para o carrossel
+- A exibição de informações deve ser alternada na tela, conforme o usuário clica na seta

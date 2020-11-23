@@ -1,0 +1,9 @@
+Finalidade: 
+- Validar o redirecionamento para a página inicial
+
+Pré-requisitos:
+- Acessar a opção "Central de Ajuda / Perguntas Frequentes"
+
+Passos para reprodução: 
+Clicar no ícone do SmartMei, no header
+- O usuário deve ser redirecionado para a página inicial.
