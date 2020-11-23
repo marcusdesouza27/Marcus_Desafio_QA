@@ -1,0 +1,17 @@
+Finalidade: 
+- Validar o cálculo da mensa conforme banco escolhido
+
+Pré-requisitos:
+- Acessar a página do smartmei (https://www.smartmei.com.br/)
+
+Passos para reprodução: 
+Acessar a opção 'Planos e Tarifas'
+- A tela deve exibir a tabela de planos e Tarifas
+
+Clicar na aba "COMPARE"
+- As informações do plano devem ser exibidas, com o Banco do Brasil selecionado.
+
+Selecionar o Banco Bradesco
+- O valor do campo "TOTAL da mensalidade CONTA PJ + CONTADOR" deve ser alterado.
+- O novo valor exibido deve ser igual a "R$ 118,00"
+
