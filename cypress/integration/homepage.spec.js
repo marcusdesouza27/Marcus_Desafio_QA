@@ -8,7 +8,7 @@ describe('Homepage', () => {
         cy.visit('https://www.smartmei.com.br/')
     })
 
-    it.only('Acessar Homepage da Smartmei', () => {
+    it('Acessar Homepage da Smartmei', () => {
 
         cy.get('h1').should('contain.text', 'Ser MEI ficou fácil de verdade!')
         
