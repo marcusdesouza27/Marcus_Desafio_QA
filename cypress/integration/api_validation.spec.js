@@ -12,41 +12,43 @@ describe('API validation', () => {
         cy.request({
             method: 'POST',
             url: 'https://gorest.co.in/public-api/users',
-            headers: {authorization: 'df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
+            // headers: {authorization: '2275e2cbbf8dc1d113b25fb018cdb2e07e088b35bb5f7b7c13ca160ed96a82ba'},
+            
+            headers: {'Authorization': 'Bearer df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
             body: {
                 "name": "User Test",
-                "email": "test@test.com",
+                "email": "tes14t@test.com",
                 "gender": "Male",
                 "status": "Active"
             }
-        }).then(res => console.log(res))
+        }).its('body.code').should('equal', 201)    
     })
 
-    it('Update an user', () => {
+    it.only('Update an user', () => {
         cy.request({
             method: 'PUT',
             url: 'https://gorest.co.in/public-api/users/1345',
-            headers: {authorization: 'df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
+            headers: {'Authorization': 'Bearer df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
             body: {
                 "name": "Update Name"
             }
-        }).then(res => console.log(res))
+        }).its('body.code').should('equal', 200)    
     })
 
-    it('Search an user', () => {
+    it.only('Search an user', () => {
         cy.request({
             method: 'GET',
             url: 'https://gorest.co.in/public-api/users/1345',
-            headers: {authorization: 'df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
-         
-        }).then(res => console.log(res))
+            headers: {'Authorization': 'Bearer df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
+        }).its('body.code').should('equal', 200)
+                        
     })
 
-    it('Delete an user', () => {
+    it.only('Delete an user', () => {
         cy.request({
             method: 'DELETE',
-            url: 'https://gorest.co.in/public-api/users/1486',
-            headers: {authorization: 'df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
-        }).then(res => console.log(res))
+            url: 'https://gorest.co.in/public-api/users/1560',
+            headers: {'Authorization': 'Bearer df56896ef58ec4b7bf0ff4d4499e9e0cd1bf57eab6a4ea26b9c4a96f293a954c'},
+        }).its('body.code').should('equal', 204)
     })
 })
